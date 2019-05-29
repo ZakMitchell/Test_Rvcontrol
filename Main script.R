@@ -8,6 +8,8 @@ Data3 <- rnorm(100, 26.7)
 # Create data frame
 AllData <- data.frame(ID = ID, Treatment = Treat, Growth = Data1, Water = Data2, Temperature = Data3)
 
-  
-# Carry out statistics
-Test1 <- anova()
+# Output data to same directory as this script
+Dir <- dirname(rstudioapi::getSourceEditorContext()$path) # NOTE: will error if run outside R studio
+file_out <- paste(Dir, "Data_1.csv")
+#file_out <- paste(Dir, "/Data_", length(list.files(Dir)), ".csv", sep = "")
+write.csv(AllData, file = file_out)
