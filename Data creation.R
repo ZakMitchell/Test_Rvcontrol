@@ -5,6 +5,8 @@ Data1 <- rnorm(100, 5.6)
 Data2 <- rep(seq(103.64, 70.02, length.out = 20), 5)
 Data3 <- rnorm(100, 26.7)
 
+# This a minor change by Ed
+
 # Create data frame
 AllData <- data.frame(ID = ID, Treatment = Treat, Growth = Data1, Water = Data2, Temperature = Data3)
 
