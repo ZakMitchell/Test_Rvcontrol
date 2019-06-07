@@ -13,3 +13,7 @@ Dir <- dirname(rstudioapi::getSourceEditorContext()$path) # NOTE: will error if 
 file_out <- paste(Dir, "/Data_1.csv", sep = "")
 #file_out <- paste(Dir, "/Data_", length(list.files(Dir)), ".csv", sep = "")
 write.csv(AllData, file = file_out)
+
+
+# plot 
+plot(Growth ~ Water, AllData)
