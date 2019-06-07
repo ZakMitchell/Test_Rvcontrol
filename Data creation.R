@@ -24,3 +24,7 @@ pairs(AllData)
 # branching with pretty plots
 library(summarytools)
 view(dfSummary(AllData))
+
+# let's run a model
+mod <- lm(Growth ~ Water + Temperature, AllData)
+summary(mod)
