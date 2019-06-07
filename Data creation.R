@@ -8,6 +8,8 @@ Data3 <- rnorm(100, 26.7)
 # This a minor change by Ed
 # Ed & Jamie both caused conflict
 
+# this is another small change so that Clare can see
+
 # Create data frame
 AllData <- data.frame(ID = ID, Treatment = Treat, Growth = Data1, Water = Data2, Temperature = Data3)
 
