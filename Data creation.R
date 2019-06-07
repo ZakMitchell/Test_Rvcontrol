@@ -19,3 +19,8 @@ write.csv(AllData, file = file_out)
 
 # plot 
 plot(Growth ~ Water, AllData)
+pairs(AllData)
+
+# branching with pretty plots
+library(summarytools)
+view(dfSummary(AllData))
